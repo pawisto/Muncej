@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  height: 4rem;
+  background-color: hsl(172, 91%, 43%);
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px 2px hsl(200, 62%, 15%);
+}
+
+#globe {
+  margin: 0 0 0 40px;
+  height: 3rem;
+}
+
+h1 {
+  font-family: "Lora", serif;
+  font-style: italic;
+  margin-left: 30px;
+  margin-right: auto;
+  color: hsl(217, 91%, 37%);
+}
+
+.navbar-link {
+  font-size: 1.1rem;
+  width: 110px;
+  margin-left: 20px;
+  color: hsl(217, 91%, 37%);
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+#vocabulary {
+  margin-right: 40px;
+}
+
+.navbar-link:hover {
+  color: hsl(6, 51%, 32%);
+}
+
+main {
+  margin: 50px 40px 40px;
+  line-height: 150%;
+}
+
+p {
+  text-align: justify;
+  text-justify: auto;
+}
+
+#world-map {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
+  background-color: hsl(199, 100%, 40%);
+  border: solid hsl(199, 100%, 40%) 3px;
+  border-radius: 7px;
+  box-shadow: 0 0 4px 1.5px hsl(207, 70%, 12%);
+}
+
+th {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(172, 91%, 43%);
+  border: solid black 1px;
+  text-align: start;
+  font-weight: 500;
+}
+
+td {
+  border: solid black 1px;
+  background-color: hsl(170, 93%, 80%);
+  word-wrap: break-word;
+}
+
+.vowels {
+  width: 350px;
+}
+
+.vowels td {
+  width: 25%;
+  font-weight: 700;
+}
+
+.vowels tr:first-of-type td, .vowels :nth-child(1) {
+  background-color: hsl(172, 91%, 43%);
+  font-weight: 500;
+}
+
+
+.consonants {
+  width: 100%;
+}
+
+.consonants tr:first-of-type td, .consonants :nth-child(1) {
+  background-color: hsl(172, 91%, 43%);
+  font-weight: 500;
+}
+
+.consonants td {
+  width: 10%;
+  font-weight: 700;
+}
+
+.alphabet {
+  width: 100%;
+}
+
+.alphabet td {
+  width: calc(100%/15);
+  font-weight: 700;
+}
+
+.alphabet tr:first-of-type td{
+  background-color: hsl(172, 91%, 43%);
+  font-weight: 500;
+}
+
+.parts-of-speech {
+  width: auto;
+}
+
+.parts-of-speech td {
+  font-weight: 700;
+}
+
+.parts-of-speech tr:first-of-type td, .parts-of-speech :nth-child(1) {
+  background-color: hsl(172, 91%, 43%);
+  font-weight: 500;
+}
+
+.conjugation td {
+  width: 12.5%;
+}
+
+.conjugation td {
+  font-weight: 700;
+}
+
+.conjugation tr:first-of-type td, .conjugation :nth-child(1) {
+  background-color: hsl(172, 91%, 43%);
+  font-weight: 500;
+}
+
+.correlatives {
+  width: 100%;
+}
+
+.correlatives td {
+  font-weight: 700;
+}
+
+.correlatives tr:first-of-type td, .correlatives :nth-child(1) {
+  background-color: hsl(172, 91%, 43%);
+  font-weight: 500;
+}
+
+.correlatives :nth-child(1) {
+  width: 12%;
+}
+
+.correlatives tr:last-of-type td, .correlatives :last-child {
+  font-weight: 400;
+}
+
+.correlatives tr:last-of-type td:first-of-type {
+  font-weight: 500;
+}
+
+.pronouns td {
+  font-weight: 700;
+}
+
+.pronouns tr:first-of-type td {
+  background-color: hsl(172, 91%, 43%);
+  font-weight: 500;
+}
+
+.dark-cell {
+  background-color: hsl(172, 91%, 43%);;
+  font-weight: 500;
+}
+
+.pronouns .slim-font-cell {
+  font-weight: 400;
+}
+
+.swadesh td {
+  font-weight: 700;
+}
+
+.swadesh tr:first-of-type td, .swadesh :nth-child(1) {
+  background-color: hsl(172, 91%, 43%);
+  font-weight: 500;
+}
+
+.swadesh :nth-child(2), .swadesh :nth-child(3) {
+  width: 27%;
+}
+
+.swadesh :nth-child(4), .swadesh :nth-child(5), .swadesh :nth-child(6) {
+  font-weight: 400;
+  width: 14%;
+}
+
+.uld td {
+  height: 26.5px;
+  font-weight: 700;
+}
+
+.uld tr:first-of-type td, .uld :nth-child(1) {
+  background-color: hsl(172, 91%, 43%);
+  font-weight: 500;
+}
+
+.uld :nth-child(2) {
+  width: 32%;
+}
+.uld :nth-child(3) {
+  width: 22%;
+}
+
+.uld :nth-child(4), .uld :nth-child(5), .uld :nth-child(6) {
+  font-weight: 400;
+  width: 14%;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  #globe {
+    margin: 0 0 0 20px;
+  }
+
+  h1 {
+    margin-left: 15px;
+  }
+
+  .navbar-link {
+    font-size: 1.1rem;
+    width: 100px;
+    margin-left: 20px;
+  }
+  
+  #vocabulary {
+    margin-right: 20px;
+  }
+
+  main {
+    margin: 25px 20px 20px;
+    line-height: 150%;
+  }
+
+  table {
+    margin-bottom: 10px;
+  }
+
+  .uld :nth-child(2) {
+    width: 30%;
+  }
+
+  .uld :nth-child(3) {
+    width: 24%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  html {
+    font-size: 10px;
+  }
+
+  #globe {
+    margin: 0 0 0 5px;
+    height: 2rem;
+  }
+
+  h1 {
+    margin-left: 7px;
+    font-size: 1.7rem;
+  }
+
+  .navbar-link {
+    font-size: 1rem;
+    width: 66px;
+    margin-left: 6px;
+  }
+  
+  #vocabulary {
+    margin-right: 5px;
+  }
+  main {
+    margin: 7px 5px 5px;
+    line-height: 150%;
+  }
+
+  table {
+    margin-bottom: 6px;
+  }
+  
+  .uld :nth-child(2), .uld :nth-child(3) {
+    width: 27%;
+  }
+}
