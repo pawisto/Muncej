@@ -8,7 +8,6 @@
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
 }
 
 body {
@@ -269,9 +268,15 @@ td {
   width: 14%;
 }
 
+@media only screen and (max-width: 900px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
 @media only screen and (max-width: 768px) {
-  html {
-    font-size: 12px;
+  body {
+    font-size: 0.75rem;
   }
 
   #right-nav * {
@@ -284,12 +289,12 @@ td {
   }
 
   #logo  {
-    font-size: 2rem;
+    font-size: 2em;
     margin-left: 15px;
   }
 
   .navbar-link {
-    font-size: 1.4rem;
+    font-size: 1.4em;
   }
 
   section {
@@ -302,7 +307,7 @@ td {
   }
 
   .vowels {
-    width: 300px;
+    width: 320px;
   }
 
   .uld :nth-child(2) {
@@ -315,8 +320,8 @@ td {
 }
 
 @media only screen and (max-width: 540px) {
-  html {
-    font-size: 10px;
+  body {
+    font-size: 0.625rem;
   }
 
   #right-nav * {
@@ -325,16 +330,16 @@ td {
 
   #globe {
     margin: 0 0 0 12px;
-    height: 2.7rem;
+    height: 2.7em;
   }
 
   #logo  {
-    font-size: 1.8rem;
+    font-size: 1.8em;
     margin-left: 9px;
   }
 
   .navbar-link {
-    font-size: 1.3rem;
+    font-size: 1.3em;
   }
 
   section {
@@ -344,6 +349,10 @@ td {
 
   table {
     margin-bottom: 6px;
+  }
+
+    .vowels {
+    width: 300px;
   }
 
   .correlatives td {
